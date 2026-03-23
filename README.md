@@ -42,6 +42,14 @@ bun run dev
 
 The script reads `config.json`, resolves all whitelisted files, and generates `output/index.md`.
 
+### Test
+
+No `.env` or `BASE_PATH` setup is required to run the tests — the test suite uses temporary directories.
+
+```bash
+bun test
+```
+
 ## Configuration
 
 ### Environment Variables

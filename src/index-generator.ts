@@ -2,7 +2,7 @@ import { join } from "path";
 import { mkdir } from "fs/promises";
 import type { ResolvedProject } from "./types";
 
-function generateIndex(projects: ResolvedProject[]): string {
+export function generateIndex(projects: ResolvedProject[]): string {
   const timestamp = new Date().toISOString();
   const lines: string[] = [];
 
