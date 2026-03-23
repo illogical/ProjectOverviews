@@ -1,0 +1,61 @@
+{
+  "outputDir": "./output",
+  "projects": [
+    {
+      "name": "LMApi",
+      "path": "LMApi",
+      "repo": "https://github.com/illogical/LMApi",
+      "description": "Intelligent request router and load balancer for Ollama servers with OpenAI-compatible endpoints, queueing, and metrics.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "LMEval",
+      "path": "LMEval",
+      "repo": "https://github.com/illogical/LMEval",
+      "description": "Prompt engineering evaluation platform with side-by-side comparison, scored rubrics, and model leaderboards.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "DevPlanner",
+      "path": "DevPlanner",
+      "repo": "https://github.com/illogical/DevPlanner",
+      "description": "Human + AI project management platform with Kanban board, MCP server, artifact management, and skill evaluation.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "MemoryApi",
+      "path": "MemoryApi",
+      "repo": "https://github.com/illogical/MemoryApi",
+      "description": "Long-term semantic memory backend for AI agents using RAG with vector, graph, and SQL databases.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "SplitDiff",
+      "path": "SplitDiff",
+      "repo": "https://github.com/illogical/SplitDiff",
+      "description": "Browser-based, zero-dependency side-by-side diff viewer with syntax highlighting and tab management.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "SourceManager",
+      "path": "SourceManager",
+      "repo": "https://github.com/illogical/SourceManager",
+      "description": "Secure HTTP API for Git operations and dev server lifecycle management, designed for AI agent workflows.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "Command PiDog",
+      "path": "command-pidog",
+      "repo": "https://github.com/illogical/command-pidog",
+      "description": "REST + WebSocket API for controlling a PiDog robot with AI agent integration, voice commands, and camera streaming.",
+      "files": ["README.md"]
+    },
+    {
+      "name": "PiDog Web",
+      "path": "command-pidog-web",
+      "repo": "https://github.com/illogical/command-pidog-web",
+      "description": "Mobile-first React frontend for PiDog robot control with voice, manual controls, live camera, and sensor dashboard.",
+      "files": ["README.md"]
+    }
+  ]
+}
