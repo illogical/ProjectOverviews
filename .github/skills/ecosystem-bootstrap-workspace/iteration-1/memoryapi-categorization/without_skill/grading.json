@@ -1,0 +1,26 @@
+{
+  "eval_name": "memoryapi-categorization",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "identifies-lmeval-dependency",
+      "passed": true,
+      "evidence": "States 'MemoryApi is listed as blocked on LMEval' and provides detailed explanation of LMEval as the evaluation platform for prompt quality."
+    },
+    {
+      "text": "mentions-lmapi-inference",
+      "passed": true,
+      "evidence": "Lists LMApi as project #2 that affects the approach: 'MemoryApi routes all its LLM calls (embeddings, categorization, tagging) through LMApi'."
+    },
+    {
+      "text": "suggests-measurable-approach",
+      "passed": true,
+      "evidence": "References 'measurable quality over intuition' principle and recommends rubric-based scoring, deterministic checks, and baselining. States 'resist the urge to just keep tweaking prompts by gut feel'."
+    },
+    {
+      "text": "practical-workflow",
+      "passed": true,
+      "evidence": "Provides a 6-step workflow: (1) Collect failure cases, (2) Define evaluation rubrics in LMEval, (3) Baseline current prompt, (4) Iterate on variants, (5) Test across models, (6) Deploy the winner."
+    }
+  ]
+}

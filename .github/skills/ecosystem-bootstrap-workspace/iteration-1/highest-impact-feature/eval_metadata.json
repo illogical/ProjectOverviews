@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "eval_name": "highest-impact-feature",
+  "prompt": "I've got a few hours free and want to build something useful for this ecosystem. What single feature or improvement would have the biggest impact right now? I'm comfortable with TypeScript and React.",
+  "assertions": [
+    {"name": "recommends-lmeval", "description": "Response recommends LMEval or LMEval-adjacent work as the highest-impact choice"},
+    {"name": "explains-why-highest-impact", "description": "Response explains WHY the recommendation has the biggest impact — references unblocking other projects or the refinement loop"},
+    {"name": "suggests-specific-work", "description": "Response suggests specific features or areas of work, not just generic advice"},
+    {"name": "no-pidog-as-priority", "description": "Response does NOT suggest PiDog projects as the most impactful use of time"}
+  ]
+}

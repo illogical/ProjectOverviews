@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "skill_name": "ecosystem-bootstrap",
+    "skill_path": "/Users/matt/Dev/ProjectOverviews/.github/skills/ecosystem-bootstrap/SKILL.md",
+    "executor_model": "claude-opus-4-6",
+    "analyzer_model": "claude-opus-4-6",
+    "timestamp": "2026-03-23T03:15:00Z",
+    "evals_run": [
+      "cold-start-overview",
+      "memoryapi-categorization",
+      "highest-impact-feature"
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "cold-start-overview",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "mentions-all-tier1-projects",
+          "passed": true,
+          "evidence": "Lists all five Tier 1 projects with detailed descriptions."
+        },
+        {
+          "text": "identifies-lmeval-priority",
+          "passed": true,
+          "evidence": "States LMEval is the 'single highest priority right now'."
+        },
+        {
+          "text": "explains-dependency-chain",
+          "passed": true,
+          "evidence": "Includes ASCII diagram showing MemoryApi blocked on LMEval."
+        },
+        {
+          "text": "conveys-mission",
+          "passed": true,
+          "evidence": "Opens with self-refining ecosystem framing and core principles."
+        },
+        {
+          "text": "deprioritizes-pidog",
+          "passed": true,
+          "evidence": "PiDog listed as Tier 3 fun/experimental."
+        }
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "cold-start-overview",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "mentions-all-tier1-projects",
+          "passed": true,
+          "evidence": "Lists all five projects organized by architectural layer."
+        },
+        {
+          "text": "identifies-lmeval-priority",
+          "passed": true,
+          "evidence": "States LMEval is the critical path."
+        },
+        {
+          "text": "explains-dependency-chain",
+          "passed": true,
+          "evidence": "States MemoryApi is blocked on LMEval."
+        },
+        {
+          "text": "conveys-mission",
+          "passed": true,
+          "evidence": "Describes local-first measurable-quality mission."
+        },
+        {
+          "text": "deprioritizes-pidog",
+          "passed": true,
+          "evidence": "PiDog not highlighted as high priority."
+        }
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "memoryapi-categorization",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifies-lmeval-dependency",
+          "passed": true,
+          "evidence": "Calls out LMEval dependency as critical path."
+        },
+        {
+          "text": "mentions-lmapi-inference",
+          "passed": true,
+          "evidence": "States MemoryApi routes inference through LMApi."
+        },
+        {
+          "text": "suggests-measurable-approach",
+          "passed": true,
+          "evidence": "Recommends deterministic metrics and rubric scoring."
+        },
+        {
+          "text": "practical-workflow",
+          "passed": true,
+          "evidence": "Provides concrete staged workflow."
+        }
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "memoryapi-categorization",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "identifies-lmeval-dependency",
+          "passed": true,
+          "evidence": "States MemoryApi is blocked on LMEval."
+        },
+        {
+          "text": "mentions-lmapi-inference",
+          "passed": true,
+          "evidence": "Mentions LMApi as inference routing layer."
+        },
+        {
+          "text": "suggests-measurable-approach",
+          "passed": true,
+          "evidence": "Uses measurable quality over intuition framing."
+        },
+        {
+          "text": "practical-workflow",
+          "passed": true,
+          "evidence": "Provides multi-step workflow from baseline to deployment."
+        }
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "highest-impact-feature",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "recommends-lmeval",
+          "passed": true,
+          "evidence": "Recommends LMEval programmatic evaluation API."
+        },
+        {
+          "text": "explains-why-highest-impact",
+          "passed": true,
+          "evidence": "Explains cascading impact and dependencies."
+        },
+        {
+          "text": "suggests-specific-work",
+          "passed": true,
+          "evidence": "Includes concrete endpoint and implementation suggestions."
+        },
+        {
+          "text": "no-pidog-as-priority",
+          "passed": true,
+          "evidence": "Does not prioritize PiDog projects."
+        }
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "highest-impact-feature",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "recommends-lmeval",
+          "passed": true,
+          "evidence": "Recommends LMEval programmatic evaluation API."
+        },
+        {
+          "text": "explains-why-highest-impact",
+          "passed": true,
+          "evidence": "Explains unblocking MemoryApi and enabling refinement loop."
+        },
+        {
+          "text": "suggests-specific-work",
+          "passed": true,
+          "evidence": "Includes specific API endpoint recommendations."
+        },
+        {
+          "text": "no-pidog-as-priority",
+          "passed": true,
+          "evidence": "PiDog not suggested as most impactful priority."
+        }
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.00"
+    }
+  },
+  "notes": [
+    "Both configurations pass all assertions across all three evals.",
+    "The skill's strongest advantage is consistency and concise prioritization framing rather than raw pass-rate gains against a baseline that can read the same docs.",
+    "To create more discriminative benchmarks, add assertions for tiered-priority framing, proactive guidance sections, and response concision."
+  ]
+}

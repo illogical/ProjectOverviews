@@ -1,0 +1,26 @@
+{
+  "eval_name": "highest-impact-feature",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "recommends-lmeval",
+      "passed": true,
+      "evidence": "Recommends building a 'programmatic evaluation API for LMEval' as the single highest-impact thing."
+    },
+    {
+      "text": "explains-why-highest-impact",
+      "passed": true,
+      "evidence": "Four-point explanation: 'Unblocks MemoryApi', 'Enables DevPlanner integration', 'Foundation for autonomous refinement loops', 'Every project benefits'. Explicitly states the cascading impact."
+    },
+    {
+      "text": "suggests-specific-work",
+      "passed": true,
+      "evidence": "Provides TypeScript interface definitions, three specific API endpoints with code examples (POST /api/v1/evaluations/run, GET /:id, GET /:id/results), an implementation sketch with Hono routes, and stretch goals (webhooks, presets, baseline comparison)."
+    },
+    {
+      "text": "no-pidog-as-priority",
+      "passed": true,
+      "evidence": "PiDog is not mentioned as a priority. Only appears in passing under 'Every project benefits' as one of many consumers."
+    }
+  ]
+}

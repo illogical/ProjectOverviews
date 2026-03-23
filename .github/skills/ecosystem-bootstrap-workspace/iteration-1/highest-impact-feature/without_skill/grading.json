@@ -1,0 +1,26 @@
+{
+  "eval_name": "highest-impact-feature",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "recommends-lmeval",
+      "passed": true,
+      "evidence": "Recommends 'Build LMEval's Programmatic Evaluation API' as the highest impact choice."
+    },
+    {
+      "text": "explains-why-highest-impact",
+      "passed": true,
+      "evidence": "Four-point explanation: 'Unblocks MemoryApi immediately', 'Enables the self-refinement loop', 'Makes LMEval a platform, not just a tool', 'You already have everything you need'. Includes architecture diagram showing flow."
+    },
+    {
+      "text": "suggests-specific-work",
+      "passed": true,
+      "evidence": "Lists four specific API endpoints (POST /api/v1/evaluations, GET /:runId, GET /:runId/results, POST /presets/:presetId/run), stretch goals (baseline comparison, TypeScript client package), and a concrete validation script for MemoryApi."
+    },
+    {
+      "text": "no-pidog-as-priority",
+      "passed": true,
+      "evidence": "PiDog mentioned only in passing as one of several projects that 'would benefit'. Not suggested as priority work."
+    }
+  ]
+}

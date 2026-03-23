@@ -1,0 +1,31 @@
+{
+  "eval_name": "cold-start-overview",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "mentions-all-tier1-projects",
+      "passed": true,
+      "evidence": "Lists all five Tier 1 projects: DevPlanner, LMApi, LMEval, MemoryApi, and SourceManager, each with detailed descriptions organized by architectural layer."
+    },
+    {
+      "text": "identifies-lmeval-priority",
+      "passed": true,
+      "evidence": "States 'LMEval is the critical path' and it's 'explicitly marked as the #1 priority'. Explains it unblocks measurable improvement across everything else."
+    },
+    {
+      "text": "explains-dependency-chain",
+      "passed": true,
+      "evidence": "States MemoryApi is 'blocked on LMEval — the prompt quality for its AI features needs measurable refinement, which requires LMEval to be further along'."
+    },
+    {
+      "text": "conveys-mission",
+      "passed": true,
+      "evidence": "Describes 'self-refining, local-first AI development stack' with philosophy of 'local hardware, full control, measurable quality, no vendor lock-in'."
+    },
+    {
+      "text": "deprioritizes-pidog",
+      "passed": true,
+      "evidence": "PiDog projects listed under 'Application Layer' without being highlighted as priorities. Not mentioned in the priority list."
+    }
+  ]
+}

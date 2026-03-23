@@ -1,0 +1,11 @@
+{
+  "eval_id": 2,
+  "eval_name": "memoryapi-categorization",
+  "prompt": "I need to improve MemoryApi's categorization prompts — they're not tagging memories accurately enough. What's the best approach given the current state of the ecosystem? Are there other projects I should be aware of that affect how I tackle this?",
+  "assertions": [
+    {"name": "identifies-lmeval-dependency", "description": "Response identifies LMEval as the tool to use for measuring prompt quality improvements"},
+    {"name": "mentions-lmapi-inference", "description": "Response mentions that MemoryApi uses LMApi as its inference layer"},
+    {"name": "suggests-measurable-approach", "description": "Response suggests a systematic/measurable approach (rubrics, metrics, comparison) rather than trial and error"},
+    {"name": "practical-workflow", "description": "Response provides a practical workflow or sequence of steps"}
+  ]
+}

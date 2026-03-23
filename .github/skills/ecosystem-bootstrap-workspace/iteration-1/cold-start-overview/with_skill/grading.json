@@ -1,0 +1,31 @@
+{
+  "eval_name": "cold-start-overview",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "mentions-all-tier1-projects",
+      "passed": true,
+      "evidence": "Explicitly lists all five Tier 1 projects under 'Tier 1 — Core': LMEval, DevPlanner, LMApi, MemoryApi, and SourceManager with detailed descriptions of each."
+    },
+    {
+      "text": "identifies-lmeval-priority",
+      "passed": true,
+      "evidence": "States LMEval is the 'single highest priority right now' and ranks it #1 in the priority list with explanation that it has 'cascading benefits across the entire ecosystem'."
+    },
+    {
+      "text": "explains-dependency-chain",
+      "passed": true,
+      "evidence": "Includes an ASCII dependency diagram showing LMApi ← LMEval ← MemoryApi with explicit note: 'MemoryApi can't meaningfully improve its AI features until LMEval exists to measure whether prompt changes actually help'."
+    },
+    {
+      "text": "conveys-mission",
+      "passed": true,
+      "evidence": "Opens with 'self-refining, AI-augmented development ecosystem' and includes a dedicated Principles section covering measurable quality, local-first, plain text/Git-tracked, and design for AI consumers. Closes with the autonomous refinement loop vision."
+    },
+    {
+      "text": "deprioritizes-pidog",
+      "passed": true,
+      "evidence": "PiDog projects listed under 'Tier 3 — Fun / Experimental' and in the priority order section described as 'fun but lower priority'."
+    }
+  ]
+}

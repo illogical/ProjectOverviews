@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "cold-start-overview",
+  "prompt": "I'm a new AI coding assistant and I just got dropped into this workspace. I see there are a bunch of projects — LMApi, LMEval, DevPlanner, MemoryApi, etc. Can you give me the rundown? What are these projects, how do they fit together, and what should I prioritize if I want to be helpful?",
+  "assertions": [
+    {"name": "mentions-all-tier1-projects", "description": "Response mentions all five Tier 1 projects: LMEval, DevPlanner, LMApi, MemoryApi, and SourceManager"},
+    {"name": "identifies-lmeval-priority", "description": "Response identifies LMEval as the highest priority or critical path project"},
+    {"name": "explains-dependency-chain", "description": "Response explains that MemoryApi is blocked on or depends on LMEval for prompt refinement"},
+    {"name": "conveys-mission", "description": "Response conveys the local-first, AI-augmented, measurable-quality mission"},
+    {"name": "deprioritizes-pidog", "description": "Response does NOT position PiDog projects as high priority or core to the ecosystem"}
+  ]
+}

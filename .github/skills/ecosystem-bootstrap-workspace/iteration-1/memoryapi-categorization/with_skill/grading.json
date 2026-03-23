@@ -1,0 +1,26 @@
+{
+  "eval_name": "memoryapi-categorization",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "identifies-lmeval-dependency",
+      "passed": true,
+      "evidence": "Opens with 'The LMEval Dependency — This Is the Critical Path' section, states prompt changes are 'essentially guesswork' without LMEval, and explicitly says LMEval is 'designed exactly for this problem'."
+    },
+    {
+      "text": "mentions-lmapi-inference",
+      "passed": true,
+      "evidence": "States 'Since MemoryApi routes all inference through LMApi' and includes LMApi in the 'Projects That Directly Affect This Work' table with details about metrics and parallel execution."
+    },
+    {
+      "text": "suggests-measurable-approach",
+      "passed": true,
+      "evidence": "Recommends deterministic metrics, LLM-as-Judge rubrics, JSON Schema validation, and testing across models. Explicitly states 'You keep what improves scores, discard what doesn't.'"
+    },
+    {
+      "text": "practical-workflow",
+      "passed": true,
+      "evidence": "Provides a clear 4-step workflow: (1) Build eval dataset, (2) Set up LMEval evaluation, (3) Iterate on prompts with measured feedback (5 specific techniques), (4) Test across models via LMApi. Also includes a pragmatic 'Quick Win' fallback path."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "skill_name": "ecosystem-bootstrap",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a new AI coding assistant and I just got dropped into this workspace. I see there are a bunch of projects — LMApi, LMEval, DevPlanner, MemoryApi, etc. Can you give me the rundown? What are these projects, how do they fit together, and what should I prioritize if I want to be helpful?",
+      "expected_output": "A comprehensive but prioritized overview of the ecosystem: mentions all Tier 1 projects, identifies LMEval as the critical path, explains the dependency chain (especially MemoryApi blocked on LMEval), conveys the local-first AI-augmented mission, and provides actionable guidance on where to focus effort.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "mentions-all-tier1-projects",
+          "description": "Response mentions all five Tier 1 projects: LMEval, DevPlanner, LMApi, MemoryApi, and SourceManager"
+        },
+        {
+          "name": "identifies-lmeval-priority",
+          "description": "Response identifies LMEval as the highest priority or critical path project"
+        },
+        {
+          "name": "explains-dependency-chain",
+          "description": "Response explains that MemoryApi is blocked on or depends on LMEval for prompt refinement"
+        },
+        {
+          "name": "conveys-mission",
+          "description": "Response conveys the local-first, AI-augmented, measurable-quality mission — not just listing projects but explaining the WHY"
+        },
+        {
+          "name": "deprioritizes-pidog",
+          "description": "Response does NOT position PiDog projects as high priority or core to the ecosystem"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need to improve MemoryApi's categorization prompts — they're not tagging memories accurately enough. What's the best approach given the current state of the ecosystem? Are there other projects I should be aware of that affect how I tackle this?",
+      "expected_output": "Identifies that MemoryApi's prompt quality is currently bottlenecked by LMEval — prompt changes should be measured, not guessed at. Recommends using LMEval to evaluate categorization prompt variants systematically. Mentions LMApi as the inference layer that MemoryApi routes through. Suggests a workflow: create evaluation rubrics in LMEval, test prompt variants across models, measure with deterministic metrics, then deploy the winner.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "identifies-lmeval-dependency",
+          "description": "Response identifies LMEval as the tool to use for measuring prompt quality improvements rather than guessing"
+        },
+        {
+          "name": "mentions-lmapi-inference",
+          "description": "Response mentions that MemoryApi uses LMApi as its inference layer"
+        },
+        {
+          "name": "suggests-measurable-approach",
+          "description": "Response suggests a systematic/measurable approach to prompt improvement (rubrics, metrics, comparison) rather than trial and error"
+        },
+        {
+          "name": "practical-workflow",
+          "description": "Response provides a practical workflow or sequence of steps for tackling the categorization problem"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've got a few hours free and want to build something useful for this ecosystem. What single feature or improvement would have the biggest impact right now? I'm comfortable with TypeScript and React.",
+      "expected_output": "Recommends contributing to LMEval since it's the critical path that unblocks MemoryApi and benefits every prompt-using project. Suggests specific areas: stabilizing core evaluation workflows, building the programmatic API, or integrating with DevPlanner's skill eval data. Explains WHY this is highest impact. Does NOT suggest PiDog work as high-impact.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "recommends-lmeval",
+          "description": "Response recommends LMEval or LMEval-adjacent work as the highest-impact choice"
+        },
+        {
+          "name": "explains-why-highest-impact",
+          "description": "Response explains WHY the recommendation has the biggest impact — references unblocking other projects or enabling the refinement loop"
+        },
+        {
+          "name": "suggests-specific-work",
+          "description": "Response suggests specific features or areas of work, not just 'work on LMEval' generically"
+        },
+        {
+          "name": "no-pidog-as-priority",
+          "description": "Response does NOT suggest PiDog projects as the most impactful use of time"
+        }
+      ]
+    }
+  ]
+}
