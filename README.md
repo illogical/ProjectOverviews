@@ -1,6 +1,6 @@
-# ProjectOverviews
+# Project Overviews
 
-**Gather, index, and summarize documentation across a software ecosystem — the bootstrap document that aligns every AI agent toward the same goals.**
+**Gather, index, and summarize documentation across a software ecosystem with a bootstrap document that aligns every AI agent toward the same goals.**
 
 ProjectOverviews is a TypeScript script and documentation hub that maintains a living index of all projects in a personal development ecosystem. It reads a configuration of whitelisted files across multiple repositories, generates a linked Markdown index, and provides hand-crafted summaries that explain how each project contributes to an overarching mission of building a self-refining, AI-augmented software development workflow.
 
